@@ -1,0 +1,180 @@
+/* 字体 */
+@import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css');
+
+* {
+    /* Screen version */
+    font-family: "LXGW WenKai Screen", sans-serif;
+}
+
+:root {
+    --b3-theme-primary: #5b68ff;
+    --card-color: var(--b3-toolbar-background);
+    --border-is: 2px solid rgb(236, 122, 0);
+    --line-col: block;
+}
+
+/* 数据库图片全宽 */
+.av__cellassetimg {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+#dockLeft {
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+    background-color: var(--card-color);
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 添加第一个伪元素，用作原来的❄ */
+#dockLeft::after {
+    content: '❄';
+    position: absolute;
+    left: 50%;
+    /* 在容器中水平居中 */
+    font-size: 24px;
+    /* 雪花的大小 */
+    animation: fall 25s linear infinite;
+    /* 无限循环的下落动画 */
+    color: rgb(255, 0, 0);
+}
+
+/* 添加第二个伪元素，用作新的❄ */
+#dockLeft::before {
+    content: '❄';
+    position: absolute;
+    left: 50%;
+    /* 在容器中水平居中 */
+    font-size: 24px;
+    /* 雪花的大小 */
+    animation: fall 35s linear infinite;
+    /* 无限循环的下落动画 */
+    color: rgb(0, 0, 0);
+    /* 可选：设置新的雪花颜色 */
+}
+
+/* 定义下落动画 */
+@keyframes fall {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 90%;
+    }
+}
+
+#dockRight {
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 1px;
+    background-color: var(--card-color);
+    box-shadow: -5px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* 标签页头 */
+.fn__flex.layout-tab-bar [data-type="tab-header"] {
+    border-radius: 10px;
+    margin: 1px;
+    background-color: var(--card-color);
+    height: 5px !important;
+    border: var(--border-is);
+    max-height: 10px !important;
+    height: 5px !important;
+}
+
+/* 顶部工具栏和底部状态栏 */
+#status {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 3px;
+    border-bottom: none; /* 移除下边框 */
+    border-top: var(--border-is); /* 左边框样式 */
+    border-right: var(--border-is); /* 右边框样式 */
+    border-left: var(--border-is); /* 下边框样式 */
+}
+
+#toolbar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 3px;
+    border-top: none; /* 移除上边框 */
+    border-left: var(--border-is); /* 左边框样式 */
+    border-right: var(--border-is); /* 右边框样式 */
+    border-bottom: var(--border-is); /* 下边框样式 */
+}
+
+
+/* 菜单 */
+.b3-menu,
+.b3-menu__submenu {
+    background-color: var(--card-color);
+    border: var(--border-is);
+}
+
+/* 菜单项 */
+.b3-menu__item {
+    border: var(--border-is);
+}
+
+/* 文档树与标签页 */
+.layout-tab-container.fn__flex-1 {
+    border-radius: 10px;
+    margin: 1px;
+    border: var(--border-is);
+    margin-right: 4px;
+    margin-left: 4px;
+    box-shadow: 0 15px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* 标签页头空余 */
+.layout-tab-bar.layout-tab-bar--readonly.fn__flex-1 {
+    border-radius: 10px;
+    margin: 1px;
+}
+
+/* 对话框（设置） */
+.b3-dialog__body {
+    border-radius: 10px;
+    margin: 1px;
+    border: var(--border-is);
+}
+
+/* 对话框列项 */
+.b3-list-item.b3-list-item--focus {
+    border: var(--border-is);
+}
+
+.b3-dialog__body .b3-list-item.b3-list-item {
+    border: var(--border-is);
+}
+
+/* 内容框 */
+.b3-select,
+.b3-button,
+.b3-text-field {
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* 按钮分界线 */
+.b3-menu__separator {
+    position: relative;
+    height: 1px;
+    margin: 10px 0;
+    background: linear-gradient(to right, black 40%, red 60%);
+}
+
+.b3-menu__separator::before {
+    content: "★";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    background-color: transparent;
+    color: var(--line-col);
+}

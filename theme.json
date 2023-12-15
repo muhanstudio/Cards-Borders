@@ -1,0 +1,29 @@
+{
+    "name": "Cards&Borders",
+    "author": "muhanstudio",
+    "url": "https://github.com/muhanstudio/Cards&Borders",
+    "version": "0.0.1",
+    "minAppVersion": "2.8.8",
+    "displayName": {
+        "default": "Cards&Borders",
+        "zh_CN": "卡片边框化"
+    },
+    "description": {
+        "default": "A theme that adds borders to all cards",
+        "zh_CN": "一款将全局卡片边框化的主题"
+    },
+    "readme": {
+        "default": "README.md",
+        "zh_CN": "README_zh_CN.md"
+    },
+    "funding": {
+    },
+    "modes": [
+        "light",
+        "dark"
+    ],
+    "keywords": [
+        "cards",
+        "borders"
+    ]
+}
