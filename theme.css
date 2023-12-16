@@ -75,6 +75,7 @@
     background-color: var(--card-color);
     box-shadow: -5px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 /* 标签页头 */
 .fn__flex.layout-tab-bar [data-type="tab-header"] {
     border-radius: 10px;
@@ -91,20 +92,28 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: 3px;
-    border-bottom: none; /* 移除下边框 */
-    border-top: var(--border-is); /* 左边框样式 */
-    border-right: var(--border-is); /* 右边框样式 */
-    border-left: var(--border-is); /* 下边框样式 */
+    border-bottom: none;
+    /* 移除下边框 */
+    border-top: var(--border-is);
+    /* 左边框样式 */
+    border-right: var(--border-is);
+    /* 右边框样式 */
+    border-left: var(--border-is);
+    /* 下边框样式 */
 }
 
 #toolbar {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: 3px;
-    border-top: none; /* 移除上边框 */
-    border-left: var(--border-is); /* 左边框样式 */
-    border-right: var(--border-is); /* 右边框样式 */
-    border-bottom: var(--border-is); /* 下边框样式 */
+    border-top: none;
+    /* 移除上边框 */
+    border-left: var(--border-is);
+    /* 左边框样式 */
+    border-right: var(--border-is);
+    /* 右边框样式 */
+    border-bottom: var(--border-is);
+    /* 下边框样式 */
 }
 
 
@@ -177,4 +186,33 @@
     padding: 0 5px;
     background-color: transparent;
     color: var(--line-col);
+}
+
+/* 标题样式 */
+div[data-subtype="h1"] {
+    position: relative;
+}
+
+div[data-subtype="h1"]:after {
+    content: "";
+    font-size: 8px;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(29, 157, 129), red);
+}
+
+div[data-subtype="h2"] {
+    position: relative;
+}
+
+div[data-subtype="h2"]:after {
+    content: "";
+    font-size: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
 }

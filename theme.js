@@ -1,5 +1,4 @@
 const idd = window.siyuan.config.appearance.mode;
-console.log(idd);
 
 if (idd === 0) {
   const root = document.documentElement;
