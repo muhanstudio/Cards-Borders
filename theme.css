@@ -11,6 +11,7 @@
     --card-color: var(--b3-toolbar-background);
     --border-is: 2px solid rgb(212, 210, 209);
     --line-col: block;
+    --border-bottom: 1px dashed #000;
 }
 
 /* 数据库图片全宽 */
@@ -242,7 +243,7 @@ div[data-subtype="h2"]:after {
 .protyle-title__input::after {
     content: '';
     display: block;
-    border-bottom: 1px dashed #000;
+    border-bottom: var(--border-bottom);
     /* 设置虚线样式，可以根据需要调整颜色和宽度 */
     margin-top: 5px;
     /* 设置虚线与文本的间距，根据需要调整 */
