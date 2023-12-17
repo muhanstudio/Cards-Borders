@@ -26,7 +26,7 @@
     border-bottom-right-radius: 10px;
     margin-right: 5px;
     background-color: var(--card-color);
-    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* 添加第一个伪元素，用作原来的❄ */
@@ -73,7 +73,7 @@
     border-bottom-left-radius: 10px;
     margin-left: 1px;
     background-color: var(--card-color);
-    box-shadow: -5px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* 标签页头 */
@@ -135,14 +135,14 @@
     margin: 1px;
     border: var(--border-is);
     margin-right: 4px;
-    margin-left: 4px;
 }
 
 /* 标签页头空余 */
-.layout-tab-bar.layout-tab-bar--readonly.fn__flex-1 {
+/* .layout-tab-bar.layout-tab-bar--readonly.fn__flex-1 {
     border-radius: 10px;
     margin: 1px;
-}
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+} */
 
 /* 对话框（设置） */
 .b3-dialog__body {
@@ -182,6 +182,7 @@
 .b3-text-field {
     border-width: 2px;
     border-style: solid;
+    border-color: tan;
 }
 
 /* 按钮分界线 */
