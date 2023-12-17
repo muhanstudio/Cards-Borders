@@ -9,8 +9,8 @@
         "zh_CN": "卡片边框化"
     },
     "description": {
-        "default": "A theme that adds borders to all cards",
-        "zh_CN": "一款将全局卡片边框化的主题"
+        "default": "A theme that frames global cards, with small but original custom styles, keeping simplicity and harmony with minimal changes",
+        "zh_CN": "一款将全局卡片边框化的主题，且附带了一些小的但是比较原生态的自定义样式，用最少的改变尽量保持了简洁与和谐"
     },
     "readme": {
         "default": "README.md",
