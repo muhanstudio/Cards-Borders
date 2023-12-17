@@ -145,7 +145,8 @@
 } */
 
 /* 对话框（设置） */
-.b3-dialog__body {
+
+.b3-dialog__container {
     border-radius: 10px;
     margin: 1px;
     border: var(--border-is);
@@ -232,7 +233,17 @@ div[data-subtype="h2"]:after {
     height: 1px;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
 }
+
 /* 隐藏文档树于文档页间细线 */
 .layout__resize--lr::after {
     display: none;
+}
+
+.protyle-title__input::after {
+    content: '';
+    display: block;
+    border-bottom: 1px dashed #000;
+    /* 设置虚线样式，可以根据需要调整颜色和宽度 */
+    margin-top: 5px;
+    /* 设置虚线与文本的间距，根据需要调整 */
 }
