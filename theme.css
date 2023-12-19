@@ -138,6 +138,11 @@
     margin-right: 4px;
 }
 
+/* 社区下载卡片 */
+.b3-card.b3-card--wrap {
+    border: var(--border-is);
+}
+
 /* 标签页头空余 */
 /* .layout-tab-bar.layout-tab-bar--readonly.fn__flex-1 {
     border-radius: 10px;
@@ -150,7 +155,7 @@
 .b3-dialog__container {
     border-radius: 10px;
     margin: 1px;
-    border: var(--border-is);
+    border: 2px solid rgb(117, 101, 81);
 }
 
 /* 对话框列项 */
@@ -240,6 +245,7 @@ div[data-subtype="h2"]:after {
     display: none;
 }
 
+/* 标题下虚线 */
 .protyle-title__input::after {
     content: '';
     display: block;
@@ -247,4 +253,121 @@ div[data-subtype="h2"]:after {
     /* 设置虚线样式，可以根据需要调整颜色和宽度 */
     margin-top: 5px;
     /* 设置虚线与文本的间距，根据需要调整 */
+}
+
+/* .av__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.av__row {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.av__cell {
+    width: 30%;
+}
+
+.av__row--util,
+.av__row--footer,
+.av__gutters,
+.av__firstcol.av__colsticky,
+.av__row.av__row--header {
+    display: none;
+} */
+
+/* REF https://github.com/svchord/Rem-Craft */
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.protyle-action{
+    color:rgb(70, 110, 220);;
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.protyle-action svg{
+    margin:0;
+    width:16px;
+    height:16px;
+    padding:0px 0px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li::after{
+    content:"";
+    display:block;
+    position:absolute;
+    pointer-events:none;
+    width:34px;
+    left:-18px;
+    top:-20px;
+    border-style:solid;
+    border-color:rgb(70, 110, 220);;
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li:not(:has(.block-focus))::after{
+    bottom:-2px;
+    border-width:0 0 0 2px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li:has(.block-focus)::after{
+    height:38px;
+    border-radius:0 0 0 5px;
+    border-width:0 0 2px 2px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li:has(.block-focus)~.li:not(:has(.block-focus))::after{
+    border-color:rgba(0,0,0,0)
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li[data-subtype=o]::after{
+    width:24px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>.list:has(.block-focus)>.li[data-subtype=t]::after{
+    width:28px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id]::after{
+    content:"";
+    display:block;
+    position:absolute;
+    pointer-events:none;
+    width:34px;
+    left:-18px;
+    top:-20px;
+    border-style:solid;
+    border-color:rgb(70, 110, 220);
+    top:20px;
+    height:calc(100% + 4px);
+    border-width:0 0 0 2px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id]:has(+.list)::after{
+    height:auto;
+    bottom:0
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id][data-type=NodeHeading]::after{
+    top:0;
+    height:185%
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].list:has(.block-focus)::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].list:has(.block-focus)~[data-node-id]::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].bq:has(.block-focus)::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].bq:has(.block-focus)~[data-node-id]::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].sb:has(.block-focus)::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus)>[data-node-id].sb:has(.block-focus)~[data-node-id]::after{
+    border-color:rgba(0,0,0,0)
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[fold="1"]>[data-node-id]::after,.protyle-wysiwyg [data-node-id].li:has(.block-focus):has(>.block-focus)>[data-node-id]::after{
+    border-color:rgba(0,0,0,0)
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=o]:has(.block-focus)>.list:has(.block-focus)>.li::after{
+    top:-10px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=o]:has(.block-focus)>.list:has(.block-focus)>.li:has(.block-focus)::after{
+    height:28px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=t]:has(.block-focus)>.protyle-action{
+    color:rgb(70, 110, 220);;
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=t]:has(.block-focus)>.protyle-action svg{
+    margin:0;
+    width:14px;
+    height:14px;
+    padding:0px 0px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=t]:has(.block-focus)>.list:has(.block-focus)>.li::after{
+    top:-14px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=t]:has(.block-focus)>.list:has(.block-focus)>.li:has(.block-focus)::after{
+    height:32px
+}
+.protyle-wysiwyg [data-node-id].li:has(.block-focus)[data-subtype=t]:has(.block-focus).protyle-task--done>.list:has(.block-focus)>.li::after{
+    border-color:rgba(139, 139, 139)
 }
